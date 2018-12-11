@@ -14,11 +14,68 @@
 */
 
 /* Table Styles */
+table {
+    /* A linear gragrient background that fades from light blue to black in the bottom direction */
+    background: linear-gradient(to bottom, rgb(190, 215, 255), black);
+    /* A 5 pixel border that is solid and gray */
+    border: 5px solid gray;
+}
 
+table th,
+table td {
+    /* A 5 pixel border that is solid and gray  */
+    border: 3px solid gray;
+    /* Sets the height between lines */
+    line-height: 1.4em;
+    /* Sets the padding space around the text */
+    padding: 8px;
+}
+
+table th {
+    background-color: black;
+    /* Sets the font color to blue */
+    color: rgb(130, 210, 255);
+    /* Removes the bold */
+    font-weight: normal;
+}
+
+table td {
+    /* Sets the font color to white */
+    color: white;
+    /* Sets the font size to 0.9 em */
+    font-size: 0.9em;
+    /* Puts the text at the top of the cell */
+    vertical-align: top;
+}
 
 
 /* Column Styles */
+col#firstCol {
+    /* Sets the width of the first column to 24% */
+    width: 24%;
+}
 
+col#dataCol {
+    /* Sets the width of the other columns to 19% */
+    width: 19%;
+}
 
 
 /* Table Header Styles */
+
+thead tr {
+    /* Sets the height to 60px */
+    height: 60px;
+}
+
+thead tr:first-of-type th:first-of-type {
+    /* Sets the font size to 2 em */
+    font-size: 2em;
+}
+
+/* All th elements that are not the first th and is in a tr and thead. */
+thead tr:first-of-type th:not(:first-of-type) {
+    /* Sets the background color to transparent */
+    background-color: transparent;
+    color: black;
+}
